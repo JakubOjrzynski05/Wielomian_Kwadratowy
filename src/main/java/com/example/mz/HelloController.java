@@ -43,12 +43,12 @@ public class HelloController {
             delta.setText("Delta = " + d);
 
             if (d > 0) {
-                double m1 = (sqrt(d) - b) / (2 * a);
-                double m2 = (sqrt(d) + b) / (2 * a);
+                double m1 = (-b - sqrt(d)) / (2 * a);
+                double m2 = (-b + sqrt(d) + b) / (2 * a);
                 miejscazero.setText("M. zerowe = " + m1 + " oraz " + m2);
             } else if (d == 0) {
 
-                double m0 = (-b / 2 * a);
+                double m0 = ((-b) / (2 * a));
                 miejscazero.setText("M zerowe = " + m0);
             } else {
                 miejscazero.setText("Nie ma miejsc zerowych, delta<0");
