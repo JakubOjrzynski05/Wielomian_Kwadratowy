@@ -45,11 +45,11 @@ public class HelloController {
             if (d > 0) {
                 double m1 = (sqrt(d) - b) / (2 * a);
                 double m2 = (sqrt(d) + b) / (2 * a);
-                miejscazero.setText("Mz1= " + m1 + " Mz2= " + m2);
+                miejscazero.setText("M. zerowe = " + m1 + " oraz " + m2);
             } else if (d == 0) {
 
                 double m0 = (-b / 2 * a);
-                miejscazero.setText("Mz0= " + m0);
+                miejscazero.setText("M zerowe = " + m0);
             } else {
                 miejscazero.setText("Nie ma miejsc zerowych, delta<0");
             }
